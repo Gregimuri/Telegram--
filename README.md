@@ -15,52 +15,69 @@
 ## 🚀 Установка и запуск
 
 ### 1. Клонировать репозиторий
+
 ```bash
 git clone https://github.com/Gregimuri/telegram-helper-bot.git
 cd telegram-helper-bot
-2. Создать виртуальное окружение (рекомендуется)
-bash
-Копировать код
+```
+
+### 2. Создать виртуальное окружение (рекомендуется)
+
+```bash
 python -m venv venv
 source venv/bin/activate    # Linux/Mac
 venv\Scripts\activate       # Windows
-3. Установить зависимости
-bash
-Копировать код
+```
+
+### 3. Установить зависимости
+
+```bash
 pip install -r requirements.txt
-4. Создать бота в Telegram
-Открыть @BotFather
+```
 
-Выполнить команду /newbot
+### 4. Создать бота в Telegram
 
-Скопировать API Token
+1. Открыть **@BotFather**  
+2. Выполнить команду `/newbot`  
+3. Скопировать **API Token**  
 
-5. Запустить бота
-В файле bot.py вставить свой токен:
+### 5. Запустить бота
 
-python
-Копировать код
+В файле `bot.py` вставить свой токен:
+
+```python
 API_TOKEN = "ВАШ_ТОКЕН"
+```
+
 Запустить:
 
-bash
-Копировать код
+```bash
 python bot.py
-🛠 Технологии
-Python 3.10+
+```
 
-aiogram 3
+---
 
-SQLite (через aiosqlite)
+## 🛠 Технологии
+- Python 3.10+  
+- [aiogram 3](https://docs.aiogram.dev/)  
+- SQLite (через aiosqlite)  
 
-📸 Пример работы
-bash
-Копировать код
-/add Купить хлеб
--> Задача добавлена: Купить хлеб
+---
 
-/list
--> 1. Купить хлеб ❌
+## 📸 Пример работы
 
-/done 1
+```
+/add Купить хлеб  
+-> Задача добавлена: Купить хлеб  
+
+/list  
+-> 1. Купить хлеб ❌  
+
+/done 1  
 -> Задача №1 отмечена как выполненная ✅
+```
+
+---
+
+## 📄 Лицензия  
+MIT License
